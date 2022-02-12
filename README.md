@@ -2,8 +2,6 @@
 
  Project JUnit Test Runs
 
-
-
 # Objectives
 
 •     Practice
@@ -110,32 +108,6 @@ Submission
 All test classes should be committed and pushed back to
 the remote Git repository.
 
-# Grading
-
-The following grading scheme will be used:
-
-| **Task 4/4 3/4**                                              | **2/4**                                                      | **1/4**                    | **0/4**         |
-| ------------------------------------------------------------------- | ------------------------------------------------------------------ | -------------------------------- | --------------------- |
-| **Thoroughness** **(40%)**                              | All or nearly all test                                             |                                  |                       |
-| cases are covered                                                   | Most test                                                          |                                  |                       |
-| cases are covered                                                   | Some of test cases are covered                                     | Few test cases are covered       | No test cases created |
-| **Overlap (20%)**                                             | Nearly all tests have a                                            |                                  |                       |
-| purpose. There are very few redundant tests.                        | Most                                                               |                                  |                       |
-| tests have a purpose. There are a few redundant tests.              | At least half the tests have a                                     |                                  |                       |
-| purpose. Half the tests are redundant.                              | Most of the tests test the same condition.                         | All the tests test the           |                       |
-| same condition.                                                     |                                                                    |                                  |                       |
-| **Error** **Detection** **(20%)**                 | All or nearly all errors are detected.                             | Most of the errors are detected. | Half the errors are   |
-| detected.                                                           | Few of the errors are                                              |                                  |                       |
-| detected.                                                           | None of the errors are detected.                                   |                                  |                       |
-| **Code                                                              |                                                                    |                                  |                       |
-| Clarity****(20%)**                                            | Code looks professional, follows style guidelines and has very few |                                  |                       |
-| issues. Code is very readable.                                      | Code looks ok, but has a                                           |                                  |                       |
-| few inconsistencies. Mostly follows style guidelines. Code is       |                                                                    |                                  |                       |
-| readable.                                                           | Code is sloppy with many                                           |                                  |                       |
-| inconsistencies. Sometimes follows style guidelines and is a little |                                                                    |                                  |                       |
-| hard to read                                                        | Code is very sloppy and does not follow style                      |                                  |                       |
-| guidelines. Code is hard to read.                                   | Code is illegible.                                                 |                                  |                       |
-
 # Aside about the Ticket to Ride Problem
 
 The code is supposed to compute shortest paths for each given
@@ -148,7 +120,3 @@ want to compute a
 minimum spanning tree between just the selected cities. This
 is known as the Steiner Tree problem and is NP-hard so we’ll stick to shortest
 paths between pairs of cities in this assignment!
-
-Image source:
-https://meepletown.com/wp-content/uploads/2011/03/TTR.jpg (Retrieved on January
-28,
