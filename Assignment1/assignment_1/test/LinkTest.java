@@ -5,8 +5,7 @@ import static org.junit.jupiter.api.Assertions.*;
 @DisplayName("LinkTest class tests the Link class")
 class LinkTest {
     /**
-     * {@code getLength()} function in {@code Link} class returns a length of a
-     * link.
+     * {@code getLength()} function in {@code Link} class returns a length of a link.
      */
     @Test
     @DisplayName("getLength() returns a length of a link between city1 and city2.")
@@ -19,8 +18,7 @@ class LinkTest {
     }
 
     /**
-     * {@code getAdj(City c)} function in {@code Link} class returns {@code city1}
-     * if {@code c} is {@code city2}.
+     * {@code getAdj(City c)} function in {@code Link} class returns {@code city1} if {@code c} is {@code city2}.
      */
     @Test
     @DisplayName("getAdjCity1() returns city1 that is adjacent to city2.")
@@ -34,8 +32,7 @@ class LinkTest {
     }
 
     /**
-     * {@code getAdj(City c)} function in {@code Link} class returns {@code city2}
-     * if {@code c} is {@code city1}.
+     * {@code getAdj(City c)} function in {@code Link} class returns {@code city2} if {@code c} is {@code city1}.
      */
     @Test
     @DisplayName("getAdjCity2() returns city2 that is adjacent to city1.")
@@ -49,8 +46,7 @@ class LinkTest {
     }
 
     /**
-     * {@code getAdj(City c)} function in {@code Link} class returns {@code null} if
-     * {@code c} is {@code null}.
+     * {@code getAdj(City c)} function in {@code Link} class returns {@code null} if {@code c} is {@code null}.
      */
     @Test
     @DisplayName("getAdjCityForNullValue() returns null if c is null.")
@@ -63,8 +59,7 @@ class LinkTest {
     }
 
     /**
-     * {@code getAdj(City c)} function in {@code Link} class returns {@code null} if
-     * {@code c} is neither {@code city1} nor {@code city2}.
+     * {@code getAdj(City c)} function in {@code Link} class returns {@code null} if {@code c} is neither {@code city1} nor {@code city2}.
      */
     @Test
     @DisplayName("getAdjCityForRandomCity() returns null if c is neither city1 nor city2.")
@@ -78,8 +73,7 @@ class LinkTest {
     }
 
     /**
-     * {@code isUsed()} function in {@code Link} class returns {@code true} if link
-     * is part of the set of shortest path.
+     * {@code isUsed()} function in {@code Link} class returns {@code true} if link is part of the set of shortest path.
      */
     @Test
     @DisplayName("isUsedTrue() returns true if link is part of the set of shortest path.")
@@ -93,8 +87,7 @@ class LinkTest {
     }
 
     /**
-     * {@code isUsed()} function in {@code Link} class returns {@code false} if link
-     * is not part of the set of shortest path.
+     * {@code isUsed()} function in {@code Link} class returns {@code false} if link is not part of the set of shortest path.
      */
     @Test
     @DisplayName("isUsedFalse() returns false if link is not part of the set of shortest path.")
@@ -108,8 +101,7 @@ class LinkTest {
     }
 
     /**
-     * {@code isUsed()} function in {@code Link} class returns {@code false}
-     * initially as link is not part of the set of shortest path.
+     * {@code isUsed()} function in {@code Link} class returns {@code false} initially as link is not part of the set of shortest path.
      */
     @Test
     @DisplayName("getInitialUsedValue() returns false initially as link is not part of the set of shortest path.")
@@ -122,8 +114,7 @@ class LinkTest {
     }
 
     /**
-     * {@code setUsed(boolean u)} function in {@code Link} class sets {@code used}
-     * to {@code true}.
+     * {@code setUsed(boolean u)} function in {@code Link} class sets {@code used} to {@code true}.
      */
     @Test
     @DisplayName("setUsedTrue() sets used to true.")
@@ -137,8 +128,7 @@ class LinkTest {
     }
 
     /**
-     * {@code setUsed(boolean u)} function in {@code Link} class sets {@code used}
-     * to {@code false}.
+     * {@code setUsed(boolean u)} function in {@code Link} class sets {@code used} to {@code false}.
      */
     @Test
     @DisplayName("setUsedFalse() sets used to false.")
@@ -152,8 +142,7 @@ class LinkTest {
     }
 
     /**
-     * {@code toString()} function in {@code Link} class returns a string
-     * representation of the {@code Link}.
+     * {@code toString()} function in {@code Link} class returns a string representation of the {@code Link}.
      */
     @Test
     @DisplayName("printLinkC1LessC2() returns a string representation of the link as 'city1 distance city2'.")
@@ -166,8 +155,7 @@ class LinkTest {
     }
 
     /**
-     * {@code toString()} function in {@code Link} class returns a string
-     * representation of the {@code Link}.
+     * {@code toString()} function in {@code Link} class returns a string representation of the {@code Link}.
      */
     @Test
     @DisplayName("printLinkC2LessC1() returns a string representation of the link as 'city2 distance city1'.")
@@ -180,8 +168,7 @@ class LinkTest {
     }
 
     /**
-     * {@code compareTo(Link l)} function in {@code Link} class returns {@code 0} if
-     * both the links have same {@code city1} and {@code city2}.
+     * {@code compareTo(Link l)} function in {@code Link} class returns {@code 0} if both the links have same {@code city1} and {@code city2}.
      */
     @Test
     @DisplayName("linksSameCities() returns 0 if both the links have same cities.")
@@ -195,9 +182,7 @@ class LinkTest {
     }
 
     /**
-     * {@code compareTo(Link l)} function in {@code Link} class returns {@code -1}
-     * if {@code city1} of {@code link1} is smaller than {@code city1} of
-     * {@code link2}.
+     * {@code compareTo(Link l)} function in {@code Link} class returns {@code -1} if {@code city1} of {@code link1} is smaller than {@code city1} of {@code link2}.
      */
     @Test
     @DisplayName("link1City1SmallerLink2City1() returns -1 if city1 of link1 is smaller than city2 of link2.")
@@ -213,10 +198,7 @@ class LinkTest {
     }
 
     /**
-     * {@code compareTo(Link l)} function in {@code Link} class returns {@code -1}
-     * if {@code city1} of {@code link1} is equal to {@code city1} of {@code link2}
-     * and {@code city2} of {@code link1} is smaller than {@code city2} of
-     * {@code link2}.
+     * {@code compareTo(Link l)} function in {@code Link} class returns {@code -1} if {@code city1} of {@code link1} is equal to {@code city1} of {@code link2} and {@code city2} of {@code link1} is smaller than {@code city2} of {@code link2}.
      */
     @Test
     @DisplayName("link1City2SmallerLink2City2() returns -1 if city1 of link1 is equal to city1 of link2 and city2 of link1 is smaller than city2 of link 2.")
@@ -228,13 +210,11 @@ class LinkTest {
         final City city3 = new City("Omaha");
         final int city1city3Distance = 7;
         final Link link2 = new Link(city1, city3, city1city3Distance);
-        assertEquals(-1, link1.compareTo(link2),
-                "City1 of link1 is equal to city1 of link2 and city2 of link1 is smaller than city2 of link2.");
+        assertEquals(-1, link1.compareTo(link2), "City1 of link1 is equal to city1 of link2 and city2 of link1 is smaller than city2 of link2.");
     }
 
     /**
-     * {@code compareTo(Link l)} function in {@code Link} class returns {@code 1} if
-     * link1 cities are greater than link2 cities.
+     * {@code compareTo(Link l)} function in {@code Link} class returns {@code 1} if link1 cities are greater than link2 cities.
      */
     @Test
     @DisplayName("link1CitiesGreaterLink2Cities() returns 1 if link1 cities are greater than link2 cities.")

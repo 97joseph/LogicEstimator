@@ -8,8 +8,7 @@ import static org.junit.jupiter.api.Assertions.*;
 @DisplayName("CityTest class tests the City class")
 class CityTest {
     /**
-     * {@code addLink(Link link)} function in {@code City} class adds a link to the
-     * {@code links}.
+     * {@code addLink(Link link)} function in {@code City} class adds a link to the {@code links}.
      */
     @Test
     @DisplayName("addLink() adds a link to the links in a city.")
@@ -23,8 +22,7 @@ class CityTest {
     }
 
     /**
-     * {@code addLink(Link link)} function in {@code City} class does not add
-     * {@code null} link to the {@code links}.
+     * {@code addLink(Link link)} function in {@code City} class does not add {@code null} link to the {@code links}.
      */
     @Test
     @DisplayName("addNullLink() does not add null link to the links in a city.")
@@ -38,8 +36,7 @@ class CityTest {
     }
 
     /**
-     * {@code getLinks()} function in {@code City} class returns links added to a
-     * city.
+     * {@code getLinks()} function in {@code City} class returns links added to a city.
      */
     @Test
     @DisplayName("getAddedLinks() returns links added in a city.")
@@ -58,8 +55,7 @@ class CityTest {
     }
 
     /**
-     * {@code compareTo(City c2)} function in {@code City} class returns {@code 0}
-     * if both cities are same.
+     * {@code compareTo(City c2)} function in {@code City} class returns {@code 0} if both cities are same.
      */
     @Test
     @DisplayName("compareToSameCities() returns 0 if both cities are same.")
@@ -70,9 +66,7 @@ class CityTest {
     }
 
     /**
-     * {@code compareTo(City c2)} function in {@code City} class returns a negative
-     * value if {@code city1} {@code name} is alphanumerically smaller than
-     * {@code city2} {@code name}.
+     * {@code compareTo(City c2)} function in {@code City} class returns a negative value if {@code city1} {@code name} is alphanumerically smaller than {@code city2} {@code name}.
      */
     @Test
     @DisplayName("compareToCity1SmallerCity2() returns a negative value if city1 name is alphanumerically smaller than city2.")
@@ -83,9 +77,7 @@ class CityTest {
     }
 
     /**
-     * {@code compareTo(City c2)} function in {@code City} class returns a positive
-     * value if {@code city1} {@code name} is alphanumerically greater than
-     * {@code city2} {@code name}.
+     * {@code compareTo(City c2)} function in {@code City} class returns a positive value if {@code city1} {@code name} is alphanumerically greater than {@code city2} {@code name}.
      */
     @Test
     @DisplayName("compareToCity1GreaterCity2() returns a positive value if city1 name is alphanumerically greater than city2.")
@@ -111,8 +103,7 @@ class CityTest {
     }
 
     /**
-     * {@code toString()} function in {@code City} class returns the name of the
-     * city.
+     * {@code toString()} function in {@code City} class returns the name of the city.
      */
     @Test
     @DisplayName("testToString() returns the name of the city.")
@@ -122,8 +113,7 @@ class CityTest {
     }
 
     /**
-     * {@code compare(City c1, City c2)} function in {@code City} class returns a
-     * negative value if {@code city1} is closer from the start of the rail network.
+     * {@code compare(City c1, City c2)} function in {@code City} class returns a negative value if {@code city1} is closer from the start of the rail network.
      */
     @Test
     @DisplayName("compareCity1Closer() returns a negative value if city1 is closer from the start of the rail network.")
@@ -136,8 +126,7 @@ class CityTest {
     }
 
     /**
-     * {@code compare(City c1, City c2)} function in {@code City} class returns
-     * {@code 0} if cities are at equal distance from the start of the rail network.
+     * {@code compare(City c1, City c2)} function in {@code City} class returns {@code 0} if cities are at equal distance from the start of the rail network.
      */
     @Test
     @DisplayName("compareCity1EqualDistanceCity2() returns 0 if cities are at equal distance from the start of the rail network.")
@@ -146,13 +135,11 @@ class CityTest {
         final City city2 = new City("Winnipeg");
         city1.distance = 7;
         city2.distance = 7;
-        assertTrue((city1.compare(city1, city2) == 0),
-                "city1 and city2 are at equal distance from the start of the rail network.");
+        assertTrue((city1.compare(city1, city2) == 0), "city1 and city2 are at equal distance from the start of the rail network.");
     }
 
     /**
-     * {@code compare(City c1, City c2)} function in {@code City} class returns a
-     * positive value if {@code city2} is closer from the start of the rail network.
+     * {@code compare(City c1, City c2)} function in {@code City} class returns a positive value if {@code city2} is closer from the start of the rail network.
      */
     @Test
     @DisplayName("compareCity2Closer() returns a positive value if city2 is closer from the start of the rail network.")
@@ -165,8 +152,7 @@ class CityTest {
     }
 
     /**
-     * {@code getLinksTo(City dest, Set<Link> routeLinks)} function in {@code City}
-     * class returns {@code true} if path to destination is found.
+     * {@code getLinksTo(City dest, Set<Link> routeLinks)} function in {@code City} class returns {@code true} if path to destination is found.
      * Chicago => Saint_Louis => Little_Rock => Oklahoma_City
      * Number of links: 3
      */
@@ -203,8 +189,7 @@ class CityTest {
     }
 
     /**
-     * {@code getLinksTo(City dest, Set<Link> routeLinks)} function in {@code City}
-     * class returns {@code false} if path to destination is not found.
+     * {@code getLinksTo(City dest, Set<Link> routeLinks)} function in {@code City} class returns {@code false} if path to destination is not found.
      */
     @Test
     @DisplayName("getLinksToRouteNotFound() returns true if path to destination is found otherwise false.")
